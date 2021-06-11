@@ -34,9 +34,15 @@
     &__img {
         width: 400px;
         & path{
-            animation: levitation 15s ease infinite;
-            &.animate{
-                animation: levitation 10s ease infinite;
+            animation: levitation ease infinite;
+            &.duration10{
+                animation-duration: 10s;
+            }
+            &.duration12{
+                animation-duration: 12s;
+            }
+            &.duration14{
+                animation-duration: 14s;
             }
         }
     }

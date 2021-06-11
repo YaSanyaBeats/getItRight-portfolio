@@ -4,7 +4,7 @@
         animation-timing-function: ease-out;
     }
     25% {
-        transform: translateY(25px);
+        transform: translateY(-25px);
         animation-timing-function: ease-in;
     }
     50% {
@@ -12,7 +12,7 @@
         animation-timing-function: ease-out;
     }
     75% {
-        transform: translateY(-25px);
+        transform: translateY(25px);
         animation-timing-function: ease-in;
     }
     to {
