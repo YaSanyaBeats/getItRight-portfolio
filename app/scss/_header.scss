@@ -1,0 +1,112 @@
+.header {
+    background-color: $bg-color;
+    min-height: 650px;
+    &__header {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+    }
+    &__info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 64px;
+        font-weight: normal;
+        color: $text-color;
+        margin: 0;
+    }
+    &__subtitle {
+        font-size: 24px;
+        font-weight: normal;
+        color: $text-color;
+        margin: 40px 0 70px 0;
+        width: 480px;
+    }
+    &__img {
+        width: 400px;
+    }
+}
+.logo {
+    width: 150px;
+}
+.nav {
+    &__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    &__link {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    &__choose-theme-button {
+        margin-right: 0;
+        height: 20px;
+    }
+}
+.burger-button {
+    display: none;
+}
+.choose-theme-button {
+    &__first-icon {
+        display: inline-block;
+        & path{
+            fill: $main-color;
+        }
+    }
+    &__second-icon {
+        display: inline-block;
+        & path{
+            fill: $text-color;
+        }
+    }
+    &__switch {
+        margin: 0 5px;
+        display: inline-block;
+        width: 35px;
+        height: 20px;
+        background-color: $text-color;
+        border-radius: 10px;
+        position: relative;
+    }
+    &__circle {
+        width: 16px;
+        height: 16px;
+        background-color: $bg-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+}
+.button {
+    background-color: $main-color;
+    width: 345px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 35px;
+    transition: .4s;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: $secondary-color;
+        transform: translateY(-3px);
+    }
+}

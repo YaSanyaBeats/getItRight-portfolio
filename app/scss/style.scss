@@ -1,0 +1,10 @@
+@import "fonts";
+@import "vars";
+
+@import "common";
+
+@import "header";
+
+@media (max-width: 1440px) {
+    @import "mobile/header";
+}
