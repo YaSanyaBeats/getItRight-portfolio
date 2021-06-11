@@ -87,3 +87,5 @@ exports.cleandist = cleanDist;
 
 exports.build = series(cleanDist, images, build);
 exports.default = parallel(styles, scripts, browsersync, watching);
+
+exports.gitApp = parallel(styles, scripts);

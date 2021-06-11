@@ -1,3 +1,5 @@
 node_modules
+dist
+
 app/css
 app/js/main.min.js
