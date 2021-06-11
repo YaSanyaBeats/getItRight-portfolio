@@ -33,7 +33,12 @@
     }
     &__img {
         width: 400px;
-        animation: levitation 15s ease infinite;
+        & path{
+            animation: levitation 15s ease infinite;
+            &.animate{
+                animation: levitation 10s ease infinite;
+            }
+        }
     }
 }
 .logo {
