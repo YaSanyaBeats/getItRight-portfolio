@@ -1,0 +1,50 @@
+.about {
+    &__title {
+        margin-bottom: 65px;
+    }
+    &__item {
+        display: flex;
+    }
+    &__decor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__dot {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 17.5px solid $main-color;
+        transition: .4s;
+        &:hover{
+            border-color: $secondary-color;
+            transform: translateX(3px);
+        }
+    }
+    &__line {
+        height: 110px;
+        width: 1px;
+        background-color: $main-color;
+        margin: 15px 0;
+    }
+    &__info {
+        margin: 25px 0 0 40px;
+    }
+    &__article {
+        font-weight: 500;
+        font-size: 20px;
+        color: $text-color;
+        display: block;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 18px;
+        color: $text-color;
+    }
+}
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: $text-color;
+}
