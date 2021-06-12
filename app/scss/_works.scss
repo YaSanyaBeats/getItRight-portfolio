@@ -1,0 +1,30 @@
+.works {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__title {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    &__work {
+        width: 650px;
+    }
+    &__name {
+        color: #424242;
+        font-size: 20px;
+        &::after{
+            bottom: -10px;
+        }
+    }
+    &__link {}
+    &__img {
+        filter: grayscale(100%);
+        display: block;
+        margin: 30px 0 50px 0;
+        width: 650px;
+        transition: .4s;
+        &:hover{
+            filter: grayscale(0);
+        }
+    }
+}
