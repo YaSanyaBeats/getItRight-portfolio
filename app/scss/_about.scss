@@ -49,4 +49,16 @@
     &_center{
         text-align: center;
     }
+    &__decor{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 200px;
+            height: 3px;
+            background-color: $main-color;
+        }
+    }
 }
