@@ -1,0 +1,27 @@
+.about {
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__list {}
+    &__item {}
+    &__decor {}
+    &__dot {
+        width: 30px;
+        height: 30px;
+        border: 7.5px solid $main-color;
+    }
+    &__line {}
+    &__info {
+        margin-top: 6px;
+        margin-left: 10px;
+    }
+    &__article {
+        font-size: 18px;
+    }
+    &__text {
+        font-size: 14px;
+    }
+}
+.title {
+    font-size: 24px;
+}
