@@ -14,5 +14,13 @@
 @import "footer";
 
 @media (max-width: 1440px) {
+    @import "mobile/common";
     @import "mobile/header";
+    @import "mobile/about";
+    @import "mobile/message";
+    @import "mobile/works";
+    @import "mobile/price";
+    @import "mobile/form";
+    @import "mobile/faq";
+    @import "mobile/footer";
 }
