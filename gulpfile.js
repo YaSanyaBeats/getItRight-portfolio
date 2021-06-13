@@ -9,13 +9,16 @@ const imagemin      = require('gulp-imagemin');
 const del           = require('del');
 const sourcemaps    = require('gulp-sourcemaps');
 const ttf2woff      = require('gulp-ttf2woff');
-const ttf2woff2      = require('gulp-ttf2woff2');
+const ttf2woff2     = require('gulp-ttf2woff2');
+const devip         = require('dev-ip');
 
 function browsersync(){
     browserSync.init({
         server: {
             baseDir: 'app/'
-        }
+        },
+        notify: false,
+        host: devip()
     })
 }
 

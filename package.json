@@ -28,6 +28,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
+    "dev-ip": "^1.0.1",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-ttf2woff": "^1.1.1",
     "gulp-ttf2woff2": "^4.0.1"
