@@ -1,0 +1,27 @@
+.faq {
+    &__title {}
+    &__subtitle {
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    &__question {}
+}
+.question {
+    &_open {}
+    &__header {}
+    &__article {}
+    &__button {}
+    &__vertical-line {}
+    &__horizontal-line {}
+    &__answer-wrapper {
+        
+    }
+    &__answer {
+        padding: 15px 10px;
+    }
+    &__text {
+        font-size: 14px;
+    }
+}
