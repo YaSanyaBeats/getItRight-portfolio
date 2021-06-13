@@ -1,0 +1,25 @@
+.price {
+    &__title {
+        &::after{
+            height: 4px;
+            left: calc(50% - 50px);
+            bottom: -20px;
+        }
+    }
+    &__subtitle {
+        margin-top: 45px;
+        font-size: 14px;
+    }
+    &__content {
+        padding: 15px;
+    }
+    &__article {
+        font-size: 24px;
+    }
+    &__column {
+    }
+    &__item {
+        width: 100%;
+        font-size: 14px;
+    }
+}
