@@ -1,0 +1,26 @@
+.form {
+    margin: 60px 0;
+    padding: 30px 0;
+    &__content {
+        padding: 15px;
+    }
+    &__title {}
+    &__form {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    &__input {
+        margin: 20px 0;
+        &_big {
+            width: 200px;
+        }
+    }
+    &__button {
+        margin-top: 15px;
+    }
+    &__policy {
+    }
+    &__link {}
+}
