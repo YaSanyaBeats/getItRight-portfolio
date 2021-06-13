@@ -1,7 +1,11 @@
 .header {
+    margin-bottom: 60px;
     min-height: 600px;
     &__header {
         padding-top: 10px;
+    }
+    &__main{
+        justify-content: center;
     }
     &__title {
         font-size: 36px;
