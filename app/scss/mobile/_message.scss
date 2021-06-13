@@ -1,0 +1,25 @@
+.message {
+    margin: 60px 0;
+    padding: 15px 0;
+    &__content {
+        flex-direction: column;
+    }
+    &__img {
+        width: 140px;
+        margin: auto;
+        margin-bottom: 30px;
+        & svg{
+            width: 140px;
+            height: 140px;
+        }
+    }
+    &__info {
+        width: 100%;
+    }
+    &__article {
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-size: 14px;
+    }
+}
