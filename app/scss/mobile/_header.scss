@@ -1,0 +1,80 @@
+.header {
+    min-height: 600px;
+    &__header {
+        padding-top: 10px;
+    }
+    &__title {
+        font-size: 36px;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+    }
+    &__subtitle {
+        font-size: 18px;
+        text-align: center;
+        width: 275px;
+        margin-top: 180px;
+        margin-bottom: 30px;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-top: -270px;
+        svg{
+            overflow:visible;
+            width: 140px;
+            height: 140px;
+        }
+    }
+    &__button{
+        margin: auto;
+        margin-bottom: -30px;
+    }
+}
+.nav {
+    &__list {}
+    &__item {
+        display: none;
+    }
+    &__item-burger-button{
+        display: inline-block;
+    }
+    &__burger-button {
+        display: inline-block;
+        background-color: $text-color;
+        width: 28px;
+        height: 3px;
+        position: relative;
+        &::before, &::after{
+            content: '';
+            position: absolute;
+            left: 0;
+            background-color: $text-color;
+            width: 28px;
+            height: 3px;
+        }
+        &::before{
+            top: 9px;
+        }
+        &::after{
+            bottom: 9px;
+        }
+    }
+    &__link {}
+    &__choose-theme-button {}
+}
+.burger-button {
+    &_default {}
+    &__row {}
+}
+.choose-theme-button {
+    &__first-icon {}
+    &__switch {}
+    &__circle {}
+    &__second-icon {}
+}
+.button {
+    width: 210px;
+    height: 40px;
+    font-size: 14px;
+}
