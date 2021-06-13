@@ -1,0 +1,14 @@
+.footer {
+    padding: 30px 0;
+    &__subtitle {
+        font-size: 14px;
+    }
+    &__social {
+        margin-top: 15px;
+    }
+    &__icon {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+}
