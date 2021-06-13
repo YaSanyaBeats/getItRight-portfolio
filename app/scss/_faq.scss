@@ -1,0 +1,87 @@
+.faq {
+    &__subtitle {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+        margin: 20px 0 60px 0;
+        color: #424242;
+    }
+    &__question {
+        margin: 15px 0;
+    }
+}
+.question {
+    overflow: hidden;
+    &__header {
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(66, 66, 66, 0.25);
+        background-color: white;
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: -150px;
+    }
+    &__article {
+        font-size: 20px;
+    }
+    &__button {
+        width: 39px;
+        height: 39px;
+        border-radius: 50%;
+        background-color: $main-color;
+        position: relative;
+    }
+    &__vertical-line {
+        width: 3px;
+        height: 11px;
+        position: absolute;
+        background-color: white;
+        top: calc(50% - 5.5px);
+        left: calc(50% - 1.5px);
+        transition: .4s;
+    }
+    &__horizontal-line {
+        width: 11px;
+        height: 3px;
+        position: absolute;
+        background-color: white;
+        top: calc(50% - 1.5px);
+        left: calc(50% - 5.5px);
+        transition: .4s;
+    }
+    &__answer {
+        padding: 25px 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(66, 66, 66, 0.25);
+        width: 1400px;
+        margin: auto;
+        margin-bottom: 10px;
+        position: relative;
+        transition: 1s;
+        transform: translateY(-101%);
+    }
+    &__text {
+        color: $text-color;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &_open{
+        & .question__header {
+            margin-bottom: 0;
+        }
+        & .question__vertical-line {
+            transform: rotate(90deg);
+        }
+        & .question__horizontal-line {
+            transform: rotate(180deg);
+        }
+        & .question__answer {
+            transform: translateY(0);
+        }
+    }
+}
