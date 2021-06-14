@@ -1,8 +1,8 @@
 .header {
     margin-bottom: 60px;
-    min-height: 600px;
     &__header {
         padding-top: 10px;
+        flex-wrap: wrap;
     }
     &__main{
         justify-content: center;
@@ -36,40 +36,64 @@
     }
 }
 .nav {
-    &__list {}
+    width: 100vw;
+    transition: .3s;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    background-color: $bg-color;
+    transform: translateX(100%);
+    height: 100vh;
+    &__list{
+        flex-wrap: wrap;
+        padding-top: 25px;
+    }
     &__item {
-        display: none;
-    }
-    &__item-burger-button{
         display: inline-block;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
     }
-    &__burger-button {
-        display: inline-block;
+    &__link{
+        &:hover{
+            color: $main-color;
+        }
+    }
+    &__choose-theme-button{
+        position: absolute;
+        bottom: 120px;
+        right: 30px;
+    }
+    &_active{
+        transform: translateX(0);
+    }
+}
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    &__row{
         background-color: $text-color;
         width: 28px;
         height: 3px;
         position: relative;
-        &::before, &::after{
-            content: '';
-            position: absolute;
-            left: 0;
-            background-color: $text-color;
-            width: 28px;
-            height: 3px;
+        opacity: 1;
+        transition: .3s;
+        margin: 3px 0;
+        transition: .3s;
+    }
+    &_active{
+        .burger-button__row-top{
+            transform: translateY(9px) rotate(45deg);
         }
-        &::before{
-            top: 9px;
+        .burger-button__row-middle{
+            transform: translateX(-100%);
+            opacity: 0;
         }
-        &::after{
-            bottom: 9px;
+        .burger-button__row-bottom{
+            transform: translateY(-9px) rotate(-45deg);
         }
     }
-    &__link {}
-    &__choose-theme-button {}
-}
-.burger-button {
-    &_default {}
-    &__row {}
 }
 .choose-theme-button {
     &__first-icon {}

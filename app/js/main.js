@@ -33,6 +33,17 @@ window.onload = function() {
             item.classList.toggle('choose-theme-button_active');
         })
     })
+
+    //нажатие на бургер меню
+    const burger_button = document.querySelectorAll('.burger-button');
+
+    burger_button.forEach((item) => {
+        const nav = item.nextElementSibling;
+        item.addEventListener('click', () => {
+            item.classList.toggle('burger-button_active');
+            nav.classList.toggle('nav_active');
+        })
+    })
 }
 
 
