@@ -11,12 +11,15 @@
             left: calc(50% - 50px);
         }
     }
-    &__link {}
+    &__link {
+        height: 164px;
+        margin: 20px 0 35px 0;
+    }
     &__img {
         &_last{
             margin-bottom: 0;
         }
         width: 100%;
-        margin: 20px 0 35px 0;
+        
     }
 }
