@@ -16,13 +16,18 @@
             bottom: -10px;
         }
     }
-    &__img {
-        filter: grayscale(100%);
-        display: block;
+    &__link{
+        border-radius: 10px;
+        display: inline-block;
         margin: 30px 0 50px 0;
         width: 650px;
+        overflow: hidden;
+    }
+    &__img {
+        filter: grayscale(100%);
         transition: .4s;
         &:hover{
+            transform: scale(1.05);
             filter: grayscale(0);
         }
     }
