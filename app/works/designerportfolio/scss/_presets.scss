@@ -1,0 +1,54 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: "Gilroy-Medium";
+    color: $main-text;
+    overflow-x: hidden;
+}
+
+/*html.scrollOff, body.scrollOff{
+    overflow-y: hidden;
+}*/
+
+.bold{
+    font-family: "Gilroy-Bold";
+}
+
+h2{
+    font-family: "Gilroy-Bold";
+    font-size: 48px;
+}
+
+h3{
+    font-family: "Gilroy-Bold";
+    font-size: 34px;
+}
+
+a{
+    color: $main-text;
+    &:focus{
+        color: $main-text;
+    }
+}
+
+.wrapper{
+    width: 950px;
+    margin: auto;
+}
+
+.language a{
+    text-decoration: none;
+    color: $secondary-text;
+    transition: 0.4s;
+    user-select: none;
+    &:hover{
+        color: $main-text;
+    }
+    &.active{
+        color: $main-text;
+    }
+}

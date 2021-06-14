@@ -1,0 +1,25 @@
+.skills{
+    padding-top: 90px;
+    padding-bottom: 110px;
+    text-align: center;
+    h3{
+        display: block;
+        margin-bottom: 70px;
+    }
+    .skills-cards{
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+        .skill-card{
+            span{
+                display: block;
+                margin-top: 25px;
+                margin-bottom: 40px;
+            }
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}

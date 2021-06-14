@@ -1,0 +1,17 @@
+.home{
+    margin-top: 65px;
+    .-info{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span{
+            margin-top: 20px;
+            &.language{
+                display: none;
+            }
+        }
+    }
+    img{
+        margin-bottom: 80px;
+    }
+}

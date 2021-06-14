@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry People</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider/slick.css">
+    <link rel="stylesheet" href="css/slider/slick-theme.css">
+    <script src="scripts/jquery-2.2.0.min.js" defer></script>
+    <script src="scripts/slick.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Booking</a></li>
+                </ul>
+                <img src="img/icons/logo.svg" alt="logo">
+                <ul>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="main">
+                <div class="schedule">
+                    <span>Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+                </div>
+                <div class="hero">
+                    <h5>Restaurant</h5>
+                    <h1 class="decor">Hungry people</h1>
+                    <div class="buttons">
+                        <div class="btn first">
+                            <a href="#" >Book Table</a>
+                        </div>
+                        <div class="btn second">
+                            <a href="#">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <img src="img/icons/facebook.svg" alt="facebook">
+                    <img src="img/icons/twitter.svg" alt="twitter">
+                    <img src="img/icons/instagram.svg" alt="instagram">
+                </div>
+                
+            </div>
+            <a class="anchor" href="#"></a>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="info">
+                    <h2 class="decor">About us</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna</span>
+                    <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet</p>
+                </div>
+                <div class="collage left">
+                    <img src="img/about.jpg" alt="about">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <h5>Our team</h5>
+                <div class="main">
+                    <div class="collage right">
+                        <img src="img/team.jpg" alt="chef">
+                        <div class="frame"></div>
+                    </div>
+                    <div class="info">
+                        <h2 class="decor">Master Chef</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna</span>
+                        <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="booking" id="booking">
+            <div class="container">
+                <div class="main">
+                    <div class="form">
+                        <h2 class="decor">Book a table</h2>
+                        <form action="#">
+                            <input placeholder="Name" name="name" type="text" autocomplete="off">
+                            <input placeholder="Email" name="email" type="email" autocomplete="off">
+                            <input placeholder="Phone" name="phone" type="phone" autocomplete="off">
+                            <div class="select">
+                                <select name="people" id="">
+                                    <option value="-">People</option>
+                                    <option value="1">One Persone</option>
+                                    <option value="2">Two Persones</option>
+                                    <option value="3">Three Persones</option>
+                                    <option value="4">Four Persones</option>
+                                    <option value="5">Five Persones</option>
+                                    <option value="6">Six Persones</option>
+                                </select>
+                                <img src="img/icons/placeholder.svg" alt="">
+                            </div>
+                            <input placeholder="Date" name="date" type="date" autocomplete="off">
+                            <div class="select">
+                                <select name="time" id="">
+                                    <option value="">Time</option>
+                                    <option value="">20:00</option>
+                                    <option value="">20:30</option>
+                                    <option value="">21:00</option>
+                                    <option value="">21:30</option>
+                                    <option value="">22:00</option>
+                                    <option value="">22:30</option>
+                                    <option value="">23:00</option>
+                                    <option value="">23:30</option>
+                                    <option value="">00:00</option>
+                                    <option value="">00:30</option>
+                                    <option value="">01:00</option>
+                                    <option value="">01:30</option>
+                                    <option value="">02:00</option>
+                                    <option value="">02:30</option>
+                                </select>
+                                <img src="img/icons/placeholder.svg" alt="">
+                            </div>
+                            <input value="Book now" type="submit">
+                        </form>
+                    </div>
+                    <div class="collage left">
+                        <img src="img/booking.jpg" alt="booking">
+                        <div class="frame"></div>
+                    </div>
+                </div>
+                <span>Mon - Fri: <b>8PM - 10PM,</b> Sat - Sun: <b>8PM - 3AM,</b> Phone: <b>+40 729 131 637/+40 726 458 782</b></span>
+            </div>
+        </section>
+        <section class="specialties" id="specialties">
+            <div class="container">
+                <h5>Specialties</h5>
+                <section class="slider">
+                    <div>
+                        <div class="main">
+                            <div class="collage right">
+                                <img src="img/specialties.jpg" alt="chef">
+                                <div class="frame"></div>
+                            </div>
+                            <div class="info">
+                                <h2 class="decor">Chocolate pancakes</h2>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna</span>
+                                <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="main">
+                            <div class="collage right">
+                                <img src="img/team.jpg" alt="chef">
+                                <div class="frame"></div>
+                            </div>
+                            <div class="info">
+                                <h2 class="decor">Master Chef</h2>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna</span>
+                                <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="main">
+                            <div class="collage right">
+                                <img src="img/about.jpg" alt="chef">
+                                <div class="frame"></div>
+                            </div>
+                            <div class="info">
+                                <h2 class="decor">Fantastic atmosphere</h2>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna</span>
+                                <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <div class="container">
+                <h2 class="decor">Delicious menu</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                <ul class="categories">
+                    <li data-dish="soupe">Soupe</li>
+                    <li data-dish="pizza">Pizza</li>
+                    <li data-dish="pasta">Pasta</li>
+                    <li data-dish="desert">Desert</li>
+                    <li data-dish="wine">Wine</li>
+                    <li data-dish="beer">Beer</li>
+                    <li data-dish="drinks">Drinks</li>
+                </ul>
+                <div class="dishes">
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="soupe">
+                        <h6><span>Soup quatro stagioni</span><span class="price">35,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span class="price">55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pizza">
+                        <h6><span>Pizza quatro stagioni</span><span>55,68 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="pasta">
+                        <h6><span>Pasta quitri stagioni</span><span>48,87 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="desert">
+                        <h6><span>Desert quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="wine">
+                        <h6><span>Wine quatro stagioni</span><span class="price">7,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="beer">
+                        <h6><span>Beer quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                    <div class="dish" data-dish="drinks">
+                        <h6><span>Drinks quatro stagioni</span><span class="price">17,18 USD</span></h6>
+                        <span class="description">Integer ullamcorper neque eu purus euismod</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="events">
+            <div class="container">
+                <h5>Private events</h5>
+                <div class="main">
+                    <div class="collage right">
+                        <img src="img/events1.jpg" alt="event">
+                        <div class="frame"></div>
+                        <div class="article">
+                            <h4>weddings</h4>
+                        </div>
+                    </div>
+                    <div class="collage left">
+                        <img src="img/events2.jpg" alt="event">
+                        <div class="frame"></div>
+                        <div class="article">
+                            <h4>corporate pzrties</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span>For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.</span>
+        </section>
+        <section class="galerie" id="galerie">
+            <img src="img/galerie/galerie1.jpg" alt="galerie">
+            <img src="img/galerie/galerie2.jpg" alt="galerie">
+            <img src="img/galerie/galerie3.jpg" alt="galerie">
+            <img src="img/galerie/galerie4.jpg" alt="galerie">
+            <img src="img/galerie/galerie5.jpg" alt="galerie">
+            <img src="img/galerie/galerie6.jpg" alt="galerie">
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2 class="decor">Contact</h2>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</span>
+                <form action="#">
+                    <input placeholder="Name" type="text">
+                    <input placeholder="Email" type="email">
+                    <input placeholder="Phone" type="phone">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="label">
+                        <img src="img/icons/address.svg" alt="address">
+                        <span>5th London Boulevard, U.K.</span>
+                    </div>
+                    <div class="label">
+                        <img src="img/icons/phone.svg" alt="phone">
+                        <span>+40 729 131 637/+40 726 458 782</span>
+                    </div>
+                    <div class="label">
+                        <img src="img/icons/mail.svg" alt="mail">
+                        <span>office@mindblister.com</span>
+                    </div>
+                    <input type="submit" value="Send message">
+                </form>
+            </div>
+        </section>
+        <section class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a8f9065a8f2a702171281ea06f7fb2427bbb2babf941bdf9088dec3ad9fbe03&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+    </main>
+    <footer>
+        <span>Powered by <b>AG Studio</b></span>
+    </footer>
+</body>
+</html>

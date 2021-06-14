@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Present</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <ul class="bold">
+                    <li>
+                        <a href="#home" class="EN">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="EN">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="EN">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="EN">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" class="EN">Contacts</a>
+                    </li>
+                    <li class="menu-button" id="menu"></li>
+                    <li class="language"><a href="../ru/index.html">RU</a>|<a href="../en/index.html" class="active">ENG</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="home" id="home">
+            <div class="wrapper">
+                <div class="-info">
+                    <h2>Alexandr<br>Goncharov</h2>
+                    <span>UX | UI designer<br>24 years old, Minsk</span>
+                    <span class="language bold"><a href="../ru/index.html">RU</a>|<a href="../en/index.html" class="active">ENG</a></span>
+                </div>
+                <picture>
+                    <source media="(max-width: 950px)" srcset="../img/home-mobile.jpg">
+                    <img src="../img/home.jpg" alt="home">
+                </picture>
+                
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="wrapper">
+                <h3>About me</h3>
+                <p>Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.<br><br><br>
+                    I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.<br><br><br>
+                    Ready to implement excellent projects<br>with wonderful people.</p>
+            </div>
+        </div>
+        <div class="skills" id="skills">
+            <div class="wrapper">
+                <h3>Skills</h3>
+                <span>I work in such programs as</span>
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <img src="../img/icons/PS.svg" alt="PS">
+                        <span class="label-img">Adobe<br>Photoshop</span>
+                        <img src="../img/icons/rating1.svg" alt="">
+                    </div>
+                    <div class="skill-card">
+                        <img src="../img/icons/PR.svg" alt="PR">
+                        <span class="label-img">Adobe<br>Illustrator</span>
+                        <img src="../img/icons/rating2.svg" alt="rating-stars">
+                    </div>
+                    <div class="skill-card">
+                        <img src="../img/icons/AE.svg" alt="AE">
+                        <span class="label-img">Adobe<br>After Effects</span>
+                        <img src="../img/icons/rating1.svg" alt="rating-stars">
+                    </div>
+                    <div class="skill-card">
+                        <img src="../img/icons/Figma.svg" alt="Figma">
+                        <span class="label-img">Figma<br><br></span>
+                        <img src="../img/icons/rating1.svg" alt="rating-stars">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio" id="portfolio">
+            <div class="wrapper">
+                <h3>Portfolio</h3>
+                <img src="../img/portfolio/1.jpg" alt="portfolio-work">
+                <a href="#">Online fashion store - Homepage</a>
+                <img src="../img/portfolio/2.jpg" alt="portfolio-work">
+                <a href="#">Online fashion store - Homepage</a>
+                <img src="../img/portfolio/3.jpg" alt="portfolio-work">
+                <a href="#">Online fashion store - Homepage</a>
+            </div>
+        </div>
+        <div class="contacts" id="contacts">
+            <h3>Contacts</h3>
+            <span>Want to know more or just chat?<br>You are welcome!<br></span>
+            <button class="bold">Send message</button>
+            <div class="social">
+                <img src="../img/icons/social/in.svg" alt="in-icon">
+                <img src="../img/icons/social/instagram.svg" alt="instagram-icon">
+                <img src="../img/icons/social/behance.svg" alt="behance-icon">
+                <img src="../img/icons/social/surface.svg" alt="surface-icon">
+            </div>
+            <span class="secondary">Like me on<br>LinkedIn, Instagram, Behance, Dribble</span>
+        </div>
+    </main>
+</body>
+</html>

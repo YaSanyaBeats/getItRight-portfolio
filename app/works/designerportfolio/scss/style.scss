@@ -1,0 +1,22 @@
+@import 'fonts';
+@import 'colors';
+@import 'presets';
+
+//блоки
+@import 'nav';
+@import 'home';
+@import 'about';
+@import 'skills';
+@import 'portfolio';
+@import 'contacts';
+
+//mobile
+@media(max-width: 950px){
+    @import 'mobile/size';
+    @import 'mobile/nav';
+    @import 'mobile/home';
+    @import 'mobile/about';
+    @import 'mobile/skills';
+    @import 'mobile/portfolio';
+    @import 'mobile/contacts';
+}

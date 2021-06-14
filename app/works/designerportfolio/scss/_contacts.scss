@@ -1,0 +1,33 @@
+.contacts{
+    text-align: center;
+    padding-top: 115px;
+    padding-bottom: 120px;
+    span{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        &.secondary{
+            color: $secondary-text;
+        }
+    }
+    button{
+        background-color: $main-text;
+        border-radius: 20px;
+        font-size: 18px;
+        width: 180px;
+        height: 42px;
+        border: none;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+        color: white;
+        outline: none;
+        cursor: pointer;
+    }
+    .social{
+        width: 340px;
+        margin: auto;
+        margin-top: 85px;
+        margin-bottom: 45px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

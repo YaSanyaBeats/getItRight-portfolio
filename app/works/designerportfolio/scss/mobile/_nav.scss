@@ -1,0 +1,88 @@
+header{
+    .wrapper{
+        position: relative;
+        nav{
+            height: 100vh;
+            position: absolute;
+            left: -2px;
+            right: -2px;
+            top: 60px;
+            ul{
+                width: 100%;
+                height: 100vh;
+                transition: .4s;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border: none;
+                padding-top: 10px;
+                padding-left: 25px;
+                li{
+                    display: block;
+                    visibility: hidden;
+                    opacity: 0;
+                    font-size: 34px;
+                    margin-bottom: 65px;
+                    &.menu-button{
+                        transition: .4s;
+                        visibility: visible;
+                        opacity: 1;
+                        display: inline-block;
+                        width: 33px;
+                        height: 4px;
+                        background-color: black;
+                        position: absolute;
+                        right: 0;
+                        top: 30px;
+                        &::before{
+                            content: '';
+                            transition: .4s;
+                            width: 33px;
+                            height: 4px;
+                            background-color: black;
+                            position: absolute;
+                            bottom: 8px;
+                        }
+                        &::after{
+                            content: '';
+                            transition: .4s;
+                            width: 33px;
+                            height: 4px;
+                            background-color: black;
+                            position: absolute;
+                            top: 8px;
+                        }
+                    }
+                    &.language{
+                        transform: rotate(-90deg) translateY(42px);
+                        margin: 0;
+                        position: absolute;
+                        right: 0;
+                        bottom: 180px;
+                    }
+                }
+                &.active{
+                    background-color: white;
+                    li{
+                        visibility: visible;
+                        opacity: 1;
+                        
+                        &.menu-button{
+                            background-color: transparent;
+                            &::before{
+                                background-color: $secondary-text;
+                                transform: rotate(45deg);
+                                bottom: 0;
+                            }
+                            &::after{
+                                background-color: $secondary-text;
+                                transform: rotate(-45deg);
+                                top: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
