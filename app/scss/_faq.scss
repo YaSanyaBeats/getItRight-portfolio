@@ -12,7 +12,6 @@
     }
 }
 .question {
-    margin-bottom: -150px;
     transition: 1s;
     &__header {
         border-radius: 10px;
@@ -61,6 +60,7 @@
         padding: 0 15px;
         margin: auto;
         margin-bottom: 20px;
+        transition: 1s;
     }
     &__answer {
         padding: 25px 30px;
@@ -78,7 +78,6 @@
         line-height: 22px;
     }
     &_open{
-        margin-bottom: 0;
         & .question__vertical-line {
             transform: rotate(90deg);
         }
