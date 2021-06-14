@@ -35,16 +35,19 @@
     }
     &__img {
         width: 400px;
-        & path{
-            animation: levitation ease infinite;
-            &.duration10{
-                animation-duration: 10s;
-            }
-            &.duration12{
-                animation-duration: 12s;
-            }
-            &.duration14{
-                animation-duration: 14s;
+        & svg{
+            overflow:visible;
+            & path{
+                animation: levitation ease infinite;
+                &.duration10{
+                    animation-duration: 10s;
+                }
+                &.duration12{
+                    animation-duration: 12s;
+                }
+                &.duration14{
+                    animation-duration: 14s;
+                }
             }
         }
     }

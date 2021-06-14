@@ -12,6 +12,21 @@
     }
     &__img {
         width: 400px;
+        & svg{
+            overflow:visible;
+            & path{
+                animation: levitation ease infinite;
+                &.duration10{
+                    animation-duration: 10s;
+                }
+                &.duration12{
+                    animation-duration: 12s;
+                }
+                &.duration14{
+                    animation-duration: 14s;
+                }
+            }
+        }
     }
     &__info {
         width: 700px;
