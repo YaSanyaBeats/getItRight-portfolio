@@ -79,15 +79,18 @@
     display: none;
 }
 .choose-theme-button {
+    user-select: none;
     &__first-icon {
         display: inline-block;
         & path{
+            transition: .3s;
             fill: $main-color;
         }
     }
     &__second-icon {
         display: inline-block;
         & path{
+            transition: .3s;
             fill: $text-color;
         }
     }
@@ -99,15 +102,36 @@
         background-color: $text-color;
         border-radius: 10px;
         position: relative;
+        transition: .3s;
     }
     &__circle {
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
         background-color: $bg-color;
         border-radius: 50%;
         position: absolute;
-        top: 2px;
-        left: 2px;
+        top: 3px;
+        left: 3px;
+        transition: .3s;
+    }
+    &_active{
+        & .choose-theme-button__first-icon {
+            & path{
+                fill: white;
+            }
+        }
+        & .choose-theme-button__second-icon {
+            & path{
+                fill: $main-color;
+            }
+        }
+        & .choose-theme-button__switch{
+            background-color: $main-color;
+        }
+        & .choose-theme-button__circle{
+            background-color: white;
+            left: 18px;
+        }
     }
 }
 .button {

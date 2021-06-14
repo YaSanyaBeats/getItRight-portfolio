@@ -25,6 +25,14 @@ window.onload = function() {
         })
     });
 
+    //переключение choose-theme-button
+    const choose_theme_button = document.querySelectorAll('.choose-theme-button');
+
+    choose_theme_button.forEach((item) => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('choose-theme-button_active');
+        })
+    })
 }
 
 
