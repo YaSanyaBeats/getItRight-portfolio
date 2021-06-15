@@ -13,4 +13,16 @@ html, body{
     overflow-x: hidden;
     font-family: 'Montserrat';
     font-weight: normal;
+    transition: background-color .3s;
+}
+
+html.dark body{
+    background-color: #333333;
+    & .logo path, & .logo ellipse{
+        fill: var(--text-color);
+    }
+    & .message, & .form, & .footer{
+        background-image: none;
+        background-color: var(--bg-color);
+    }
 }

@@ -4,7 +4,7 @@
     padding: 160px 0;
     &__content {
         width: 100%;
-        border: 5px solid $main-color;
+        border: 5px solid var(--main-color);
         padding: 50px 40px;
     }
     &__form {
@@ -19,7 +19,7 @@
         color: #424242;
         background-color: transparent;
         border: none;
-        border-bottom: 2px solid $main-color;
+        border-bottom: 2px solid var(--main-color);
         padding: 10px 0;
         &_big{
             width: 300px;
@@ -38,9 +38,9 @@
     }
     &__policy {
         font-size: 14px;
-        color: $text-color;
+        color: var(--text-color);
     }
     &__link {
-        color: $main-color;
+        color: var(--main-color);
     }
 }

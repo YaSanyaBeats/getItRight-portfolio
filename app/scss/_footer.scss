@@ -8,7 +8,7 @@
         text-align: center;
         display: block;
         margin-top: 20px;
-        color: #424242;
+        color: var(--text-color);
     }
     &__social {
         display: flex;
@@ -19,6 +19,9 @@
     &__icon {
         margin: 0 15px;
         transition: .2s;
+        & path{
+            fill: var(--main-color);
+        }
         &:hover{
             transform: scale(1.1) rotate(5deg);
         }

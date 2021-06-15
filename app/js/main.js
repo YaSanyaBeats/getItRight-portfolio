@@ -31,6 +31,7 @@ window.onload = function() {
     choose_theme_button.forEach((item) => {
         item.addEventListener('click', () => {
             item.classList.toggle('choose-theme-button_active');
+            document.querySelector('html').classList.toggle('dark');
         })
     })
 

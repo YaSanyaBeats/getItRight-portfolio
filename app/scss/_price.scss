@@ -13,7 +13,7 @@
         margin: 25px 0 60px 0;
         font-weight: 500;
         font-size: 20px;
-        color: #424242;
+        color: var(--text-color);
     }
     &__content {
         width: 100%;
@@ -23,14 +23,15 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        background-color: var(--bg-color);
     }
     &__article {
         font-size: 20px;
-        color: $text-color;
+        color: var(--text-color);
         display: block;
         width: 100%;
         &::after{
-            background-color: $text-color;
+            background-color: var(--text-color);
             bottom: -5px;
         }
     }
@@ -39,7 +40,7 @@
     }
     &__item {
         font-size: 18px;
-        color: $text-color;
+        color: var(--text-color);
         margin-top: 30px;
         width: 400px;
         padding-left: 25px;
@@ -53,7 +54,7 @@
             content: '';
             width: 10px;
             height: 10px;
-            background-color: $main-color;
+            background-color: var(--main-color);
             border-radius: 50%;
             position: absolute;
             left: 0;

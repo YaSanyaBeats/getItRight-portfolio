@@ -1,4 +1,13 @@
-$main-color: #DB3834;
-$secondary-color:#B91313;
-$text-color: #424242;
-$bg-color: #F7F7F7;
+html{
+    --main-color: #DB3834;
+    --secondary-color:#B91313;
+    --text-color: #424242;
+    --bg-color: #F7F7F7;
+}
+
+html.dark{
+    --main-color: #B91313;
+    --secondary-color:#DB3834;
+    --text-color: #AAAAAA;
+    --bg-color: #282828;
+}
