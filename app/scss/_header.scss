@@ -26,13 +26,13 @@
         font-weight: normal;
         color: var(--text-color);
         margin: 0;
-        transition: color .3s;
+        transition: .5s;
     }
     &__subtitle {
         font-size: 24px;
         font-weight: normal;
         color: var(--text-color);
-        transition: color .3s;
+        transition: .5s;
         margin: 40px 0 70px 0;
         width: 480px;
     }

@@ -19,3 +19,24 @@
         transform: translateY(0);
     }
 }
+
+.animate{
+    opacity: 0;
+    transition: .5s;
+    &_left{
+        transform: translateX(-30px);
+    }
+    &_right{
+        transform: translateX(30px);
+    }
+    &_top{
+        transform: translateY(-30px);
+    }
+    &_bottom{
+        transform: translateY(30px);
+    }
+    &_active{
+        transform: none;
+        opacity: 1;
+    }
+}

@@ -90,6 +90,37 @@ window.onload = function() {
             modalWindow.classList.add('modal_open');
         })
     })
-    
+
+    function offset(el){
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {top: rect.top + scrollTop, left: rect.left + scrollLeft}
+    }
+
+
+    //анимация при скролле
+    const animate_elements = document.querySelectorAll(".animate");
+
+    function animate(){
+        animate_elements.forEach((elem) => {
+            const height = elem.offsetHeight;
+            const top = offset(elem).top;
+
+            let animItemPoint = window.innerHeight - height / 2;
+
+            if(animItemPoint > window.innerHeight){
+                animItemPoint = window.innerHeight - window.innerHeight / 2;
+            }
+
+            if((pageYOffset > top - animItemPoint) && pageYOffset < (top + height)){
+                elem.classList.add('animate_active');
+            }
+        })
+    }
+
+    if(animate_elements.length > 0){
+        window.addEventListener('scroll', animate);
+    }
 }
 
