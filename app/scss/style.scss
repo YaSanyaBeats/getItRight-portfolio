@@ -12,6 +12,7 @@
 @import "form";
 @import "faq";
 @import "footer";
+@import "modal";
 
 @media (max-width: 1440px) {
     @import "mobile/common";
@@ -23,4 +24,5 @@
     @import "mobile/form";
     @import "mobile/faq";
     @import "mobile/footer";
+    @import "mobile/modal";
 }

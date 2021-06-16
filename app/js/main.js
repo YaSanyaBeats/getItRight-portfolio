@@ -66,6 +66,30 @@ window.onload = function() {
             })
         })
     })
+
+    const modalWindow = document.querySelector('.modal');
+
+    modalWindow.addEventListener('click', (e) => {
+        if(e.target === modalWindow){
+            modalWindow.classList.remove('modal_open');
+        }
+    })
+
+    //close button modal window
+    const closeModalWindowButtons = document.querySelectorAll('.modal__close-button');
+    closeModalWindowButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            modalWindow.classList.remove('modal_open');
+        })
+    })
+
+    //open button modal window
+    const openModalWindowButtons = document.querySelectorAll('.header__button');
+    openModalWindowButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+            modalWindow.classList.add('modal_open');
+        })
+    })
     
 }
 
