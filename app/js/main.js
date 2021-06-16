@@ -126,7 +126,7 @@ window.onload = function() {
         }()
     }
     
-    new SmoothScroll(document, 300, 30);
+    new SmoothScroll(document, 150, 30);
     
 }
 
