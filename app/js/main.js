@@ -45,6 +45,21 @@ window.onload = function() {
             nav.classList.toggle('nav_active');
         })
     })
+
+    //анимация ссылок-якорей
+    const links = document.querySelectorAll('.nav__link');
+    links.forEach((link) => {
+        const blockId = link.getAttribute('href').substr(1);
+
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            document.getElementById(blockId).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    })
 }
 
 
