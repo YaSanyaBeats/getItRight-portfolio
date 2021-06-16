@@ -43,6 +43,12 @@ window.onload = function() {
         item.addEventListener('click', () => {
             item.classList.toggle('burger-button_active');
             nav.classList.toggle('nav_active');
+            if(item.classList.contains('burger-button_active')){
+                document.body.style.position = 'fixed';
+            }
+            else{
+                document.body.style.position = '';
+            }
         })
     })
 
