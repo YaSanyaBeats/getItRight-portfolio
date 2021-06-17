@@ -139,9 +139,10 @@ window.onload = function() {
             }
         });
     })
-    
 
-    
+    document.querySelectorAll('input[type="tel"]').forEach((input) => {
+        $(input).mask("+7(999) 999-9999");
+    })
 
 }
 

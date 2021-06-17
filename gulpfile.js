@@ -50,6 +50,8 @@ function images(){
 
 function scripts(){
     return src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
         'app/js/main.js'
     ])
         .pipe(uglify())
