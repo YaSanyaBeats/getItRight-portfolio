@@ -102,7 +102,7 @@ exports.scripts = scripts;
 exports.images = images;
 exports.cleandist = cleanDist;
 
-exports.build = series(cleanDist, images, fonts, build);
+exports.build = series(cleanDist, images, fonts, styles, scripts, build);
 exports.default = parallel(styles, scripts, browsersync, watching);
 
 exports.gitApp = parallel(styles, scripts);
