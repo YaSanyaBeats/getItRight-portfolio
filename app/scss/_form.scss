@@ -37,13 +37,6 @@
         &:focus:-moz-placeholder           {text-indent: 300px; transition: text-indent 0.3s ease;}
         &:focus:-ms-input-placeholder      {text-indent: 300px; transition: text-indent 0.3s ease;}
     }
-    &__policy {
-        font-size: 14px;
-        color: var(--text-color);
-    }
-    &__link {
-        color: var(--main-color);
-    }
     &__done-content{
         opacity: 0;
         visibility: hidden;
