@@ -62,6 +62,7 @@
         margin: auto;
         margin-bottom: 20px;
         transition: 1s;
+        max-height: 15px;
     }
     &__answer {
         padding: 25px 30px;
@@ -80,6 +81,9 @@
         line-height: 22px;
     }
     &_open{
+        & .question__answer-wrapper{
+            max-height: 500px;
+        }
         & .question__vertical-line {
             transform: rotate(90deg);
         }
