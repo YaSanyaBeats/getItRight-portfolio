@@ -6,6 +6,7 @@
         width: 100%;
         border: 5px solid var(--main-color);
         padding: 50px 40px;
+        position: relative;
     }
     &__form {
         display: flex;
@@ -42,5 +43,32 @@
     }
     &__link {
         color: var(--main-color);
+    }
+    &__done-content{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__done-title{
+        width: 530px;
+    }
+    &_submit{
+        .form{
+            &__title, &__form, &__policy{
+                opacity: 0;
+                visibility: hidden;
+            }
+            &__done-content{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
 }

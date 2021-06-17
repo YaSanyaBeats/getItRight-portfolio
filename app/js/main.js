@@ -123,5 +123,37 @@ window.onload = function() {
         animate();
         window.addEventListener('scroll', animate);
     }
+
+    //формы орбратной связи
+    const forms = document.querySelectorAll('form');
+    forms.forEach((form) => {
+        const inputs = form.querySelectorAll('input');
+        const request = new XMLHttpRequest();
+        const url = "mail.php";
+        const doneContent = form.parentElement.parentElement.parentElement;
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const name = inputs[0].value;
+            const email = inputs[1].value;
+            const phone = inputs[2].value;
+            const params = "name=" + name + "&email=" + email + "&phone=" + phone;
+            request.open("POST", url, true);
+            request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            request.send(params);
+        })
+
+        request.addEventListener("readystatechange", () => {
+            if(request.readyState === 4 && request.status === 200) { 
+                if(request.responseText === "1"){
+                    doneContent.classList.add('form_submit');
+                }
+            }
+        });
+    })
+    
+
+    
+
 }
 
