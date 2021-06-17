@@ -9,12 +9,14 @@
         display: block;
         margin-top: 20px;
         color: var(--text-color);
+        &_last{
+            margin-top: 40px;
+        }
     }
     &__social {
         display: flex;
         justify-content: center;
-        margin-top: 60px;
-        
+        margin-top: 20px;
     }
     &__icon {
         margin: 0 15px;
@@ -24,6 +26,14 @@
         }
         &:hover{
             transform: scale(1.1) rotate(5deg);
+        }
+    }
+    &__tel-link{
+        color: var(--text-color);
+        text-decoration: none;
+        transition: .2s;
+        &:hover{
+            color: var(--main-color);
         }
     }
 }
