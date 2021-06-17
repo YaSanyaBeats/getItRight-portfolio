@@ -33,7 +33,7 @@ function fonts(){
 }
 
 function images(){
-    return src('app/images/**/*')
+    return src('app/img/**/*')
     .pipe(imagemin([
         imagemin.gifsicle({interlaced: true}),
         imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -45,7 +45,7 @@ function images(){
             ]
         })
     ]))
-    .pipe(dest('dist/images'))
+    .pipe(dest('dist/img'))
 }
 
 function scripts(){
@@ -77,7 +77,8 @@ function build(){
         'app/css/style.min.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
-        'app/*.html'
+        'app/*.html',
+        'app/*.php'
     ], {base: 'app'})
     .pipe(dest('dist'));
 }

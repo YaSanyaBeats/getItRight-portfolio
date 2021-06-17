@@ -120,6 +120,7 @@ window.onload = function() {
     }
 
     if(animate_elements.length > 0){
+        animate();
         window.addEventListener('scroll', animate);
     }
 }
